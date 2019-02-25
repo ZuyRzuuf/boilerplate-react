@@ -35,12 +35,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ['babel-loader', 'eslint-loader']
             },
-            // https://www.apollographql.com/docs/react/recipes/webpack.html
-            {
-                test: /\.(graphql|gql)$/,
-                exclude: /node_modules/,
-                loader: 'graphql-tag/loader',
-            }
         ]
     },
     plugins: [
